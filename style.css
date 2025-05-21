@@ -157,11 +157,14 @@ img{
 /* ============================================ */  
 /*                  ABOUT                   */
 /* ============================================ */
-
+#about{
+  padding: 0;
+}
 .aboutContainer{
   display: grid;
   grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
   gap: 5px; 
+  padding: 0;
   
 }
 
