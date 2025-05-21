@@ -169,21 +169,22 @@ img{
   background:  hsl(225, 75%, 94%);;
   padding-block: 2rem;
   border-radius: 25px;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .aboutHeading{
   font-size: 3rem;
-  margin-bottom: .75rem;
   text-align: center;
-  padding-top: 1.5rem;
-  padding-bottom: 4rem;
   background-color: transparent;
-
 }
 
-.aboutMe{
-  border-radius: 400px;
+
+
+.aboutMe img{
+  max-block-size: 450px;
+  display: block;
+  left: 0;
+  margin: auto;
 }
 
 
@@ -209,6 +210,8 @@ img{
   transition: all 2s ;
   inline-size: 100%;
   transition-delay: 1s;
+  border-bottom: 2px solid var(--primary);
+  border-radius: 25px;
 }
 
 .project img:hover{
