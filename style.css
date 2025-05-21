@@ -1,0 +1,310 @@
+/* ============================================ */
+/*                  VARIABLES                   */
+/* ============================================ */
+:root{
+  --text: hsl(228, 79%, 7%);
+  --background: hsl(225, 75%, 97%);
+  --primary: hsl(226, 81%, 55%);
+  --secondary: hsl(276, 81%, 72%);
+  --accent: hsl(293, 81%, 60%);
+  --footer: hsl(230, 33%, 17%);
+
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+section{
+  margin-top: 3.5rem;
+}
+
+.wrapper{
+  max-inline-size: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.aboutSection{
+  max-inline-size: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+/* ============================================ */
+/*                  navBar                   */
+/* ============================================ */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; 
+  margin-bottom: 2rem;
+  position:static;
+}
+
+header h1{
+  font-size: 2rem;
+}
+
+nav{
+  border-radius: 25px;
+  padding-right: 25px;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+nav ul li a{
+  text-decoration: none;
+}
+
+
+/* ============================================ */  
+/*                  HERO                   */
+/* ============================================ */
+
+.hero{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 5px;
+}
+
+.heroWordingSection,
+.heroIllustrations{
+  padding-inline: 0;
+}
+
+.heroWordingSection h2{
+  font-size: 3rem;
+  margin-bottom: .75rem;
+}
+
+img{
+  max-inline-size: 100%;
+  height: auto;
+  border-radius: 25px;
+
+}
+
+.heroWordingSection p{
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.heroWordingSection .tagline{
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+
+.heroWordingSection button{
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+/* ============================================ */  
+/*                  services                   */
+/* ============================================ */
+
+
+.aboutHeader{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.servicesContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.servicesContainer .service{
+  border: 2px solid var(--primary);
+  border-radius: 25px;
+  padding-inline: 1rem;
+}
+
+.service img{
+  max-block-size: 50px;
+  display: block;
+  margin: auto;
+}
+
+.service h3{
+  font-size: 2rem;
+  margin-bottom: .75rem;
+  text-align: center;
+}
+
+
+/* ============================================ */  
+/*                  ABOUT                   */
+/* ============================================ */
+
+.aboutContainer{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px; 
+  
+}
+
+.aboutSection{
+  background:  hsl(225, 75%, 94%);;
+  padding-block: 2rem;
+  border-radius: 25px;
+  margin-top: 4rem;
+}
+
+.aboutHeading{
+  font-size: 3rem;
+  margin-bottom: .75rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
+  background-color: transparent;
+
+}
+
+.aboutMe{
+  border-radius: 400px;
+}
+
+
+/* ============================================ */
+/*                  projects                   */
+/* ============================================ */
+.projectsContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+}
+
+.project, .projectmiddle, .projectend{
+  border: 2px solid var(--primary);
+  border-radius: 25px;
+  padding-inline: 1rem;
+}
+
+.project img, .projectmiddle img,
+.projectend img{
+  display: block;
+  margin: auto;
+  transition: all 2s ;
+  inline-size: 100%;
+  transition-delay: 1s;
+}
+
+.project img:hover{
+  transform: scale(2) translate(70px, -10px);
+  border: 3px solid var(--primary);
+}
+
+.projectend img:hover{
+  transform: scale(2) translate(-100px, 10px);
+  border: 3px solid var(--primary);
+}
+
+.projectmiddle img:hover{
+  transform: scale(2);
+  border: 3px solid var(--primary);
+}
+/* ============================================ */
+/*                  contact                   */
+/* ============================================ */
+.contactContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactContainer form{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 25px;
+  border: 2px solid var(--primary);
+}
+
+.contactHeader{
+  text-align: center;
+}
+
+input{
+  border: 2px solid var(--primary);
+  border-radius: 25px;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  min-inline-size: 300px;
+  max-inline-size: 500px;
+}
+
+textarea{
+  border: 2px solid var(--primary);
+  border-radius: 25px;
+  padding:.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  min-inline-size: 300px; 
+  max-inline-size: 500px;
+}
+
+.contactButton{
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+
+/* ============================================ */
+/*                  footer                   */
+/* ============================================ */
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem; 
+  margin-top: 2rem;
+  background-color: var(--footer);
+  color: var(--background);
+}
+
+.socialMediaLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 20px ;
+}
+
+.footerNav ul li{
+  list-style: none;
+  font-size: 1.2rem;
+
+}
+
+
+
