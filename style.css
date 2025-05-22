@@ -42,7 +42,6 @@ header{
   align-items: center;
   padding: 1rem 2rem; 
   margin-bottom: 2rem;
-  position:static;
 }
 
 header h1{
@@ -176,7 +175,7 @@ img{
   background:  hsl(225, 75%, 94%);;
   padding-block: 2rem;
   border-radius: 25px;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .aboutHeading{
@@ -190,7 +189,7 @@ img{
 .aboutMe img{
   max-block-size: 350px;
   display: block;
-  left: 0;
+  object-fit: contain;
   margin: auto;
 }
 
@@ -204,6 +203,11 @@ img{
   gap: 5px;
 }
 
+.project{
+  padding: 0;
+  
+}
+
 .project, .projectmiddle, .projectend{
   border: 2px solid var(--primary);
   border-radius: 25px;
@@ -211,7 +215,7 @@ img{
 }
 
 .project img, .projectmiddle img,
-.projectend img{
+.projectend img{ 
   display: block;
   margin: auto;
   transition: all 2s ;
@@ -315,6 +319,7 @@ footer{
   font-size: 1.2rem;
 
 }
+
 
 
 
